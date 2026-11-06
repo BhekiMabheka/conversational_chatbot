@@ -1,0 +1,12 @@
+{
+  "name": "mzansi-threads-chatbot",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Knowledge-base chatbot for Mzansi Threads, powered by local Ollama models",
+  "type": "module",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  }
+}

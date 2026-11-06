@@ -112,3 +112,6 @@ button { font: inherit; cursor: pointer; }
   .nav a { display: none; }
   .search { width: 100%; }
 }
+
+/* Keep the toast clear of the chat bubble */
+.toast { bottom: 90px; }

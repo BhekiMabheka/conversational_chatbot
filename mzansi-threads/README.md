@@ -18,3 +18,10 @@ npm run dev
 ```
 
 Build for production with `npm run build`.
+
+## Chat assistant ("Thandi")
+
+The site embeds the standalone chatbot from [`../chatbot`](../chatbot) (powered by local Ollama models). Start it with `npm start` in `../chatbot` (or `docker compose up -d` from the repo root) and the **Ask Thandi** button appears bottom-right.
+
+- The chatbot URL defaults to `http://localhost:3001`. Change it with `VITE_CHATBOT_URL` (see `.env.example`).
+- After editing products in `src/products.js`, run `npm run export-kb` so the chatbot knows the new products and prices.

@@ -5,6 +5,7 @@ import ProductCard from './components/ProductCard.jsx';
 import Cart from './components/Cart.jsx';
 import Checkout from './components/Checkout.jsx';
 import Footer from './components/Footer.jsx';
+import ChatWidget from './components/ChatWidget.jsx';
 import { categories, products } from './products.js';
 
 export default function App() {
@@ -77,6 +78,7 @@ export default function App() {
         <Checkout items={cart} onClose={() => setCheckoutOpen(false)} onComplete={() => setCart([])} />
       )}
       {toast && <div className="toast">{toast}</div>}
+      <ChatWidget />
     </>
   );
 }

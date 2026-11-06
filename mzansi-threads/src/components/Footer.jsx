@@ -9,7 +9,7 @@ export default function Footer() {
         </div>
         <div>
           <h4>Help</h4>
-          <p>Delivery in 3–5 working days · 30-day returns · All prices in ZAR incl. 15% VAT</p>
+          <p>Delivery in 2–7 working days · 30-day returns · All prices in ZAR incl. 15% VAT</p>
         </div>
         <div>
           <h4>Contact</h4>

@@ -1,0 +1,49 @@
+# Runs the knowledge-base chatbot in Docker.
+#
+#   Using Ollama already installed on your computer (default):
+#     docker compose up -d --build
+#
+#   Running Ollama in Docker too (no local install needed):
+#     OLLAMA_URL=http://ollama:11434 docker compose --profile ollama up -d --build
+#
+# To serve a different website's knowledge base, set KNOWLEDGE_PATH to its folder:
+#     KNOWLEDGE_PATH=./my-site-knowledge docker compose up -d
+services:
+  chatbot:
+    build: ./chatbot
+    ports:
+      - "${CHATBOT_PORT:-3001}:3001"
+    environment:
+      OLLAMA_URL: ${OLLAMA_URL:-http://host.docker.internal:11434}
+      CHAT_MODEL: ${CHAT_MODEL:-llama3.2}
+      EMBED_MODEL: ${EMBED_MODEL:-nomic-embed-text}
+      ALLOWED_ORIGINS: ${ALLOWED_ORIGINS:-*}
+    volumes:
+      - ${KNOWLEDGE_PATH:-./chatbot/knowledge}:/app/knowledge:ro
+      - chatbot-cache:/app/.cache
+    extra_hosts:
+      - "host.docker.internal:host-gateway" # lets Linux containers reach Ollama on the host
+    restart: unless-stopped
+
+  ollama:
+    profiles: ["ollama"]
+    image: ollama/ollama:latest
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama-models:/root/.ollama
+    restart: unless-stopped
+
+  # Downloads the models once into the ollama container (only with --profile ollama).
+  ollama-pull:
+    profiles: ["ollama"]
+    image: ollama/ollama:latest
+    depends_on: [ollama]
+    environment:
+      OLLAMA_HOST: http://ollama:11434
+    entrypoint: ["/bin/sh", "-c", "sleep 3 && ollama pull ${CHAT_MODEL:-llama3.2} && ollama pull ${EMBED_MODEL:-nomic-embed-text}"]
+    restart: "no"
+
+volumes:
+  chatbot-cache:
+  ollama-models:

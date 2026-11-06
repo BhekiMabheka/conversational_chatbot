@@ -1,0 +1,101 @@
+{
+  "title": "Product catalogue",
+  "items": [
+    {
+      "name": "Shweshwe Wrap Dress",
+      "category": "Women",
+      "price": "R899 (VAT incl.)",
+      "sizes": "XS, S, M, L, XL, XXL",
+      "label": "Bestseller",
+      "description": "Classic indigo shweshwe print, hand-finished in the Eastern Cape."
+    },
+    {
+      "name": "Heritage Silk Shirt",
+      "category": "Men",
+      "price": "R749 (VAT incl.)",
+      "sizes": "XS, S, M, L, XL, XXL",
+      "label": "Heritage Day",
+      "description": "Bold, colourful print shirt – perfect for a Friday braai or a wedding."
+    },
+    {
+      "name": "Green & Gold Rugby Jersey",
+      "category": "Unisex",
+      "price": "R1 199 (VAT incl.)",
+      "sizes": "XS, S, M, L, XL, XXL",
+      "label": "Game Day",
+      "description": "Breathable supporter jersey in green and gold. Bring it home, boys!"
+    },
+    {
+      "name": "Suede Veldskoen",
+      "category": "Unisex",
+      "price": "R1 099 (VAT incl.)",
+      "sizes": "UK/SA 3–13",
+      "label": "Local Leather",
+      "description": "Iconic vellies, crepe-sole comfort from bush to boardroom."
+    },
+    {
+      "name": "Ndebele Print Bomber",
+      "category": "Women",
+      "price": "R1 349 (VAT incl.)",
+      "sizes": "XS, S, M, L, XL, XXL",
+      "label": "New",
+      "description": "Geometric Ndebele-inspired pattern on a lightweight bomber."
+    },
+    {
+      "name": "Kasi Bucket Hat",
+      "category": "Accessories",
+      "price": "R249 (VAT incl.)",
+      "sizes": "One size",
+      "label": "Lekker Deal",
+      "description": "Township street style – keeps the Highveld sun off your face."
+    },
+    {
+      "name": "Jozi Knit Beanie",
+      "category": "Accessories",
+      "price": "R199 (VAT incl.)",
+      "sizes": "One size",
+      "label": null,
+      "description": "Chunky knit for those icy Joburg winter mornings."
+    },
+    {
+      "name": "Durbs Beach Boardshorts",
+      "category": "Men",
+      "price": "R449 (VAT incl.)",
+      "sizes": "XS, S, M, L, XL, XXL",
+      "label": null,
+      "description": "Quick-dry shorts made for the warm Indian Ocean."
+    },
+    {
+      "name": "Cape Town Linen Kaftan",
+      "category": "Women",
+      "price": "R999 (VAT incl.)",
+      "sizes": "XS, S, M, L, XL, XXL",
+      "label": null,
+      "description": "Breezy linen for summer evenings on the Atlantic Seaboard."
+    },
+    {
+      "name": "Mzansi Flag Tee",
+      "category": "Unisex",
+      "price": "R299 (VAT incl.)",
+      "sizes": "XS, S, M, L, XL, XXL",
+      "label": "Proudly SA",
+      "description": "100% local cotton tee celebrating the rainbow nation."
+    },
+    {
+      "name": "Beaded Statement Necklace",
+      "category": "Accessories",
+      "price": "R349 (VAT incl.)",
+      "sizes": "One size",
+      "label": null,
+      "description": "Handmade Zulu-style beadwork by KZN artisans."
+    },
+    {
+      "name": "Karoo Wool Blanket Coat",
+      "category": "Men",
+      "price": "R1 899 (VAT incl.)",
+      "sizes": "XS, S, M, L, XL, XXL",
+      "label": "Limited",
+      "description": "Basotho-blanket inspired coat in pure Karoo merino."
+    }
+  ]
+}
